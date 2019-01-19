@@ -26,17 +26,11 @@
  */
 
 if (Configure::read('Announcement.enabled')) {
-    $announcementId = 'looking-for-designers';
-    $announcementText = '<p>Tatoeba needs help to re-design the website to be 
-        mobile-friendly! If you have experience in UI/UX design, please contact 
-        Trang at trang@tatoeba.org.</p>
-
-        <p>We are also continuously looking for developers. If you are interested to 
-        contribute to a non-profit open source project, please read our guide on how 
-        to <a href="https://github.com/Tatoeba/tatoeba2/wiki/Joining-the-dev-team">
-        join the dev team</a>.</p>
-
-        <p>Thank you!</p>';
+    $announcementId = 'update-2019-01-19';
+    $announcementText = '<strong>Tatoeba will be unavailable from 20:00 to 21:00 UTC.</strong>
+        <br><br>
+        We will be deploying the <a href="https://blog.tatoeba.org/2019/01/new-year-new-tatoeba.html">new version</a>.
+        Feel free to hang out in our <a href="https://chat.tatoeba.org/">chatroom</a> during this time.';
 
     $closeButton = $this->Html->div('close button', $this->Images->svgIcon('close'));
     $content = $this->Html->div('content', $announcementText);
